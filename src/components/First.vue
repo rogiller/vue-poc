@@ -1,12 +1,17 @@
 <template>
   <div class="first">
-    <p>First!</p>
+    <b>{{message}}</b>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'First'
+  name: 'First',
+  data () {
+    return {
+      message: 'First [from data]'
+    }
+  }
 }
 </script>
 

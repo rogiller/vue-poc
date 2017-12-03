@@ -3,7 +3,9 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import RouterNav from 'vue-router-nav'
 
+Vue.use(RouterNav)
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

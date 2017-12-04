@@ -6,7 +6,6 @@
       <input type="button" value="OK" v-on:click="onBtnClick"/>
     </div>
   </div>
-
 </template>
 
 <script>

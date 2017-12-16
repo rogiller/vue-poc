@@ -1,9 +1,8 @@
 <template>
   <div class="first">
-    <b>{{message}}</b>
     <div>
-      <input type="text" v-model="textValue"/>
-      <input type="button" value="OK" v-on:click="onBtnClick"/>
+      <el-input placeholder="Please input message..." v-model="textValue"></el-input>
+      <el-button type="primary" v-on:click="onBtnClick">DONE</el-button>
     </div>
   </div>
 </template>
@@ -20,7 +19,9 @@ export default {
   },
   methods: {
     onBtnClick: function (event) {
-      alert(this.textValue)
+      this.$alert(this.textValue, 'Message', {
+        confirmButtonText: 'OK'
+      })
       this.textValue = ''
     }
   }
